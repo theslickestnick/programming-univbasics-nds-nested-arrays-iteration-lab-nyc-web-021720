@@ -20,17 +20,18 @@ def find_greater_pair(src)
   results
 end
 
-require "pry"
+#require "pry"
 def total_even_pairs(src)
     total = 0
     row_index = 0
     while row_index < src.length do
-      if src[row_index].sum%2 == 0
+      #if src[row_index].sum%2 == 0
+      if src[row_index][0]%2 == 0 && src[row_index][1]%2 == 0
         total += src[row_index].sum
       else
     end
       row_index += 1
-      binding.pry
+      #binding.pry
     end
   total
 end
